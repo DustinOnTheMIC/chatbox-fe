@@ -48,7 +48,6 @@ const LoginForm = ({open, onClose}) => {
           localStorage.setItem('userInfo', JSON.stringify(res.data))
           onClose()
           setLoading(false)
-          console.log(res);
         }
       )
       .catch(
