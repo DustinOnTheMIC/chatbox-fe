@@ -53,7 +53,7 @@ function ChatPage({socketRef}) {
     }, [socketRef.current])
 
     useEffect(() => {// get room list
-        axios.get(ApiUrl.getRooms)
+            axios.get(ApiUrl.getRooms)
             .then(
                 res => {
                     setRoomList(res.data)
@@ -64,9 +64,10 @@ function ChatPage({socketRef}) {
             )
     }, [])
 
-    useEffect(() => { //join room
+    useEffect(() => { //joining room
         setMessageList([])
         selectedRoom && socketRef.current.emit(EventEnum.joinRoom, selectedRoom.id)
+        console.log(selectedRoom);
     }, [selectedRoom])
 
     const handleSendNewMessage = message => { //send new message to server
