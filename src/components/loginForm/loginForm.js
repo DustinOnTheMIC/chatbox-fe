@@ -43,7 +43,7 @@ const LoginForm = ({open, onClose}) => {
       }
       
       console.log();
-      axios.post(ApiUrl.login, data, {headers: {'Content-Type': 'application/json'}})
+      axios.post(ApiUrl.login, data, {headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
       .then(
         res => {
           localStorage.setItem('userInfo', JSON.stringify(res.data))
