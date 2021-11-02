@@ -1,5 +1,5 @@
 // const Base = 'https://chatbox-be-dxmoygij5-dustinonthemic.vercel.app'
-const Base = 'https://chatbox-be-1dfriamqd-dustinonthemic.vercel.app'
+const Base = 'https://chatbox-be.vercel.app'
 
 
 export const ApiUrl = Object.freeze({
