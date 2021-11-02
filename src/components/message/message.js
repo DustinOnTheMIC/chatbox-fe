@@ -39,9 +39,8 @@ const Message = ({message}) => {
         className={
           clsx(
             classes.message,
-            
           )
-        } 
+        }
         direction={userId && userId === message.id ? 'row-reverse' : 'row'}
         spacing={2}
       >
