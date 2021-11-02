@@ -47,10 +47,10 @@ function ChatPage({socketRef}) {
     }
 
     useEffect(() => { //get message back from server
-        socketRef.current && socketRef.current.on(EventEnum.getNewMessage, message => {
+        selectedRoom && socketRef.current && socketRef.current.on(EventEnum.getNewMessage, message => {
             setMessageList(pre => [...pre, message.message])
         })
-    }, [socketRef.current])
+    }, [socketRef.current, selectedRoom])
 
     useEffect(() => {// get room list
             axios.get(ApiUrl.getRooms)
