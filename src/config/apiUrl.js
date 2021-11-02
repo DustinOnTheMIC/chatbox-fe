@@ -1,4 +1,4 @@
-const Base = 'https://chatbox-be-7yrf0ywqc-dustinonthemic.vercel.app'
+const Base = 'chatbox-be-ijyqj2k1n-dustinonthemic.vercel.app'
 // const Base = 'http://localhost:3005'
 
 
