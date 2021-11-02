@@ -41,8 +41,8 @@ const LoginForm = ({open, onClose}) => {
         userName,
         password
       }
-
-      axios.post(ApiUrl.login, data)
+      console.log();
+      axios.post(ApiUrl.login, {data: JSON.stringify(data)})
       .then(
         res => {
           localStorage.setItem('userInfo', JSON.stringify(res.data))
@@ -58,7 +58,7 @@ const LoginForm = ({open, onClose}) => {
       )
     } else {
       setError(true)
-      setLoading(false)
+      setLoading(false) 
     }
   }
 
