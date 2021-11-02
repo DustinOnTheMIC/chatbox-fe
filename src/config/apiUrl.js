@@ -1,5 +1,5 @@
 // const Base = 'https://chatbox-be-dxmoygij5-dustinonthemic.vercel.app'
-const Base = 'http://localhost:3005'
+const Base = 'https://chatbox-be-1dfriamqd-dustinonthemic.vercel.app'
 
 
 export const ApiUrl = Object.freeze({
